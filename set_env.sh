@@ -1,10 +1,10 @@
 # This file is used for convenience of local development.
 # DO NOT STORE YOUR CREDENTIALS INTO GIT
 export POSTGRES_USERNAME=postgres
-export POSTGRES_PASSWORD=mypassword
-export POSTGRES_HOST=postgres.cr9bldgsf1j6.us-east-1.rds.amazonaws.com
-export POSTGRES_DB=postgres
-export AWS_BUCKET=arn:aws:s3:::mybucket1200798
+export POSTGRES_PASSWORD=rinma1699
+export POSTGRES_HOST=udagram-instance.cxlsltybw8wd.us-east-1.rds.amazonaws.com
+export POSTGRES_DB=udagramdb
+export AWS_BUCKET=udagram-350828505179-dev
 export AWS_REGION=us-east-1
 export AWS_PROFILE=default
 export JWT_SECRET=testing
