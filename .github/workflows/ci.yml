@@ -1,7 +1,5 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
 name: Node.js CI
+
 
 on:
   push:
@@ -18,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: docker-compose -f docker-compose-build.yaml build --parallel
-    - run: docker tag udagram-frontend:local utee/udagram-frontend:v1
+    - run: docker tag udagram-frontend:local utee/udagram-frontend:v2
     - run: docker tag udagram-api-user utee/udagram-api-user:v1
     - run: docker tag udagram-api-feed utee/udagram-api-feed:v1
     - run: docker tag reverseproxy utee/reverseproxy:v1
